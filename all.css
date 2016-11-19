@@ -27,12 +27,12 @@ header, nav, section, footer
 header, nav, footer
 {
 	padding: 0px;
-	margin: 16px;
+	margin: 2px;
 	/*border: 1px solid #fff;
 	border-radius: 10px;*/
 	color: black;
 	background-color: #ffffff;
-	padding:20px 20px 20px 20px;
+	padding:5px 5px 5px 5px;
 
 }
 
@@ -60,7 +60,7 @@ body
 {
 	/*background-color: #eaeced;*/
 	text-align: right;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	display: inline;
 }
 
@@ -85,7 +85,7 @@ body
 	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 0.21em;
-	color: #fdbb07;
+	color: #fff;
 	background-color: #ffffff;
 	white-space: nowrap;
 
@@ -132,11 +132,6 @@ body
 	background: #ffffff;
 }
 
-.menu ul #logo
-{
-	display: flex;
-	flex-wrap: wrap;
-}
 
 /*.menu ul #buttons
 {
@@ -156,7 +151,7 @@ body
   text-decoration: none;
   border-top: 4px solid #b9c6df;
   border-bottom: 4px solid #b9c6df;
-  padding: 20px 0;
+  padding: 10px 0;
   margin: 0 20px;
 }
 
@@ -183,102 +178,54 @@ body
   display:flex;
   align-items: center;
   flex-wrap: wrap;
-	border: 1px solid blue;
+	-webkit-flex-direction: column; /* Safari */
+ flex-direction:         column;
+	/*border: 1px solid blue;*/
 }
 
 
-.flexboxContainerWrap{
-	display:flex;
-	position:relative;
-	flex:1 0 100%;
-	flex-wrap: auto; // must be there to allow the navigation to go next line
-	background-color:#fff;
+.flexboxContainerWrap
+{
+	-webkit-flex-direction: row; /* Safari */
+  flex-direction:         row;
+	-webkit-justify-content: flex-start; /* Safari */
+ justify-content:         flex-start;
+ -webkit-align-items: stretch; /* Safari */
+	align-items:space-between;
+	background: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+	margin: top;
+	flex-wrap: wrap;
 
-	@media all and (min-width:30em){
 
-		border-bottom:4px solid red;
-		width: auto;
-	}
 }
 
-.logo2 {
 
-	position:relative;
-	z-index:902;
-	display:flex;
-	flex:2 0 20%;
-	justify-content:flex-start;
-	align-items:center;
-	padding:10em;
-	border-bottom:1px solid #eee;
-	text-decoration:none;
-	background-color:#ccc;
-	color:#222;
-
-	@media all and (min-width:30em) {
-
-		flex:1 0 5em;
-		justify-content:center;
-		border-bottom:none;
-
-	}
-}
 
 .navigation-container {
 
-	display:flex;
-	flex:1 0 100%;
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	padding: 2em;
+	justify-content: space-between;
+	margin: 0px;
+	text-align: right;
+	/*border: 1px solid red;*/
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-flow: row wrap;
+	    flex-flow: row wrap;
+	height: auto;
+	margin: top;
 
-	@media all and (min-width:30em) {
-
-	
-		flex-direction:row;
-		justify-content: space-around;
-		width:auto;
-		background-color:#fff;
-		padding:1em 1.5em;
+/*
+	font-size: 10px;
+*/
 
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-img ul li a #logo
-{
-/*
-	color: #fff;
-*/
-	color: #000;
-	text-decoration: none;
-	margin: 2px;
-	/*border-radius: 10px;
-	background: #eaeced;*/
-	display: flex;
-	flex-wrap: wrap;
-	padding: 10px;
-
-}
-
-
-.main2 {
-  display: flex;
-  // justify-content: space-between;
-}
-.a, .b, .c {
-  background: #efefef;
-  border: 1px solid #999;
-  flex: 1;
-}
-.b { text-align: center; }
-.menu2 {
-	 text-align: right
-	 border: 1px solid green;
- }
