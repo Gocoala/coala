@@ -27,18 +27,38 @@ header, nav, section, footer
 header, nav, footer
 {
 	padding: 0px;
-	margin: 2px;
+	margin: 0px;
 	/*border: 1px solid #fff;
 	border-radius: 10px;*/
 	color: black;
 	background-color: #ffffff;
-	padding:5px 5px 5px 5px;
+	padding:0px 0px 0px 0px;
 
 }
 
 ul li
 {
 	list-style-type: none;
+}
+
+img {
+ width: auto ;
+ max-width: 100% ;
+ height: auto ;
+}
+
+a:focus {
+	outline: 3px solid #000;
+}
+
+.skip-links{
+	margin: 0;
+	padding: 0;
+}
+
+.skip-links a {
+	position: absolute;
+	top: -3em;
 }
 
 body
@@ -50,7 +70,7 @@ body
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	min-height: 100vh;
+	/*min-height: 100vh;*/
 	margin: 0;
 	background: #ffffff;
 	font-family: 'Proza Libre', sans-serif;
@@ -61,7 +81,7 @@ body
 	/*background-color: #eaeced;*/
 	text-align: right;
 	/*border: 1px solid red;*/
-	display: inline;
+
 }
 
 .menu ul
@@ -75,7 +95,7 @@ body
 	display: flex;
 	-ms-flex-flow: row wrap;
 	    flex-flow: row wrap;
-	height: auto;
+
 /*
 	font-size: 10px;
 */
@@ -172,6 +192,10 @@ body
 	padding: 3px;
 }
 
+.flex-center404
+{
+	color: #7c6348;
+}
 
 .flexboxContainer
 {
@@ -196,7 +220,7 @@ body
   display: flex;
   justify-content: space-between;
   font-size: 1.5em;
-	margin: top;
+
 	flex-wrap: wrap;
 
 
