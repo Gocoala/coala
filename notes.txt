@@ -1,0 +1,29 @@
+# vim: wrap spell
+
+During development
+------------------
+
+Open two terminal windows. Both terminals have select the website directory.
+Terminal 1: jekyll s --host 0.0.0.0
+Terminal 2: compass w
+
+Point a browser window to localhost:4000
+
+Each page has a built automatic refresh feautre. You can enable that by adding ?refresh to the url in the browser. eg: http://localhost/index.html?refresh
+This will then refresh the page every 2 seconds by itself without you manually having to refresh the page in the browser.
+Note then when you click a link in your page, you will have to re-add ?refresh to get the refresh feature back.
+
+
+Git
+---
+
+Committing changes using git.
+The following does *NOT* move files to the actual website because the local git version is linked to the in-house staging server and not to the remote website, but it moves your changes to the local git repository that is used for staging in-house.
+Once the version on the staging server is ready for publishing, the website will be published from there.
+Using another terminal, make website the working directory.
+
+Make sure you're in the website directory in the terminal.
+git commit -a -m "insert a comment here that describes what the changes are about"
+git push
+
+
