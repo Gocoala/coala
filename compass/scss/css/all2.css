@@ -1,0 +1,42 @@
+/*
+Error: Invalid CSS after "$lightblue": expected selector or at-rule, was ":rgba(32, 100, ..."
+        on line 14 of /home/mike/nicole/website/compass/scss/all2.scss
+
+9: $BackgroundcyanDark: rgba(102, 51, 255, 0.25);
+10: 
+11: $darkblue: rgba(102, 51, 255, 0.25);
+12: $gray: rgba(188, 188, 188, 0.25);
+13: $blue:
+14: $lightblue:rgba(32, 100, 201, 0.25);
+15: $offwhite:
+16: 
+17: 
+18: $color-main: $darkblue;
+19: $color-backgrounds: $offwhite;
+
+Backtrace:
+/home/mike/nicole/website/compass/scss/all2.scss:14
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1179:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1115:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:40:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:403:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:278:in `render'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:471:in `on_file_changed'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:328:in `block in watch'
+/usr/lib/ruby/vendor_ruby/listen/event/config.rb:23:in `call'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:115:in `_process_changes'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:19:in `block in loop_for'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop_for'
+/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:84:in `_wait_for_changes'
+/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:42:in `block in setup'
+/usr/lib/ruby/vendor_ruby/listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"$lightblue\": expected selector or at-rule, was \":rgba(32, 100, ...\"\A         on line 14 of /home/mike/nicole/website/compass/scss/all2.scss\A \A 9: $BackgroundcyanDark: rgba(102, 51, 255, 0.25);\A 10: \A 11: $darkblue: rgba(102, 51, 255, 0.25);\A 12: $gray: rgba(188, 188, 188, 0.25);\A 13: $blue:\A 14: $lightblue:rgba(32, 100, 201, 0.25);\A 15: $offwhite:\A 16: \A 17: \A 18: $color-main: $darkblue;\A 19: $color-backgrounds: $offwhite;"; }

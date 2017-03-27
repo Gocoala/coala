@@ -1,0 +1,433 @@
+/*@import url(http://fonts.googleapis.com/css?family=Dosis);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);*/
+
+@import url('https://fonts.googleapis.com/css?family=Cardo|Montserrat');
+
+
+$font-main: 'Cardo', Helvetica, sans-serif;
+$font-highlight: 'Montserrat', Helvetica, sans-serif;
+
+h1,h2,h3,h4,h5,h6{
+	font-family: $font-highlight;
+	color: $color-headlines;
+}
+
+$color-main: $darkblue;
+$color-backgrounds: $offwhite;
+$color-headlines: $purple;
+
+@media screen and (max-width: 320px)
+{
+/*
+	.items div { margin: 0; }
+	.items { padding: 20; }
+*/
+}
+
+html
+{
+	/* IE fix */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+/*
+header, nav, section, footer
+*/
+header, nav, footer
+{
+	padding: 0px;
+	margin: 0px;
+	/*border: 1px solid #fff;
+	border-radius: 10px;*/
+	color: black;
+	background-color: #ffffff;
+	padding:0px 0px 0px 0px;
+
+}
+
+ul li
+{
+	list-style-type: none;
+}
+
+img {
+ width: auto ;
+ max-width: 100% ;
+ height: auto ;
+}
+
+a:focus {
+	outline: 3px solid #000;
+}
+
+.skip-links{
+	margin: 0;
+	padding: 0;
+}
+
+.skip-links a {
+	position: absolute;
+	top: -3em;
+}
+
+body
+{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	/*min-height: 100vh;*/
+	margin: 0;
+	background: #ffffff;
+	font-family: $font-main;
+}
+
+.menu
+{
+	/*background-color: #eaeced;*/
+	text-align: right;
+	/*border: 1px solid red;*/
+
+}
+
+.menu ul
+{
+/*
+	display: block;
+	display: -webkit-flex;
+*/
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-flow: row wrap;
+	    flex-flow: row wrap;
+
+/*
+	font-size: 10px;
+*/
+	font-size: 12.8px;
+	font-size: 0.8rem;
+	line-height: 1.2em;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.21em;
+	color: #fff;
+	background-color: #ffffff;
+	white-space: nowrap;
+
+/*
+	resize: vertical;
+	overflow: auto;
+*/
+}
+
+/*.menu li:first-child
+{
+	margin-right: auto;
+	width: 40px;
+}*/
+
+.menu li
+{
+	list-style-type: none;
+/*
+	border: 1px solid red;
+*/
+}
+
+.menu li a
+{
+/*
+	color: #fff;
+*/
+	color: #fff;
+	text-decoration: none;
+	margin: 2px;
+	/*border-radius: 10px;
+	background: #eaeced;*/
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+
+
+
+}
+
+
+
+
+.menu li a.logo
+{
+	background: #ffffff;
+}
+
+
+/*.menu ul #buttons
+{
+	margin-right: align-self;
+}*/
+
+.bg_front
+{
+	background-size: cover;
+	background-position-x: center;
+	background-repeat: repeat;
+}
+
+
+.link-1
+{
+  transition: 0.3s ease;
+  background: #008CC1;
+  color: #000000;
+  font-size: 12px;
+  text-decoration: none;
+  border-top: 4px solid #008CC1;
+  border-bottom: 4px solid #008CC1;
+  padding: 10px 0;
+  margin: 0 20px;
+}
+
+.link-1:hover
+{
+  border-top: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  padding: 6px 0;
+}
+
+
+.footer
+{
+	/*background: #eaeced;*/
+	text-align: center;
+	color: black;
+	font-size: 12px;
+	padding: 3px;
+}
+
+.flex-center404
+{
+	color: #7c6348;
+}
+
+.flexboxContainer
+{
+  display:flex;
+  align-items: center;
+  flex-wrap: wrap;
+	-webkit-flex-direction: column; /* Safari */
+ flex-direction:         column;
+	border: 1px solid blue;
+	with: 1440px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+.boxPower
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.flexboxContainerWrap
+{
+	-webkit-flex-direction: row; /* Safari */
+  flex-direction:         row;
+	-webkit-justify-content: flex-start; /* Safari */
+ justify-content:         flex-start;
+ -webkit-align-items: stretch; /* Safari */
+	align-items:space-between;
+	background: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+
+	flex-wrap: wrap;
+	border: 3px solid #54ff99;
+
+
+
+}
+
+
+
+.navigation-container {
+
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	padding: 2em;
+	justify-content: space-between;
+	margin: 0px;
+	text-align: right;
+	/*border: 1px solid red;*/
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-flow: row wrap;
+	    flex-flow: row wrap;
+	height: auto;
+	margin: top;
+
+/*
+	font-size: 10px;
+*/
+
+	}
+
+	.container {
+  padding: 0.2em;
+	border: 3px solid #c0fb22;
+	width: 100%;
+
+}
+
+/* GENERAL BUTTON STYLING */
+button,
+button::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+button {
+  background: none;
+  border: 3px solid #193fff;
+  border-radius: 15px;
+  color: #008cc1;
+  display: block;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 1em auto;
+  /*padding: 2em 6em;*/
+	flex: 1;
+  position: relative;
+	right: 0;
+  text-transform: uppercase;
+	width: 100%;
+
+
+
+
+
+}
+
+button::before,
+button::after {
+  background: #c0fbff;
+	border-radius: 15px;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+button:hover {
+  color: #2ecc71;
+}
+
+/* BUTTON 1 */
+.btn-1::after {
+  height: 0;
+  left: 0;
+  top: 0;
+  width: 2%;
+}
+
+.btn-1:hover:after {
+  height: 2%;
+}
+
+/* BUTTON 2 */
+.btn-2::after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0;
+}
+
+.btn-2:hover:after {
+  width: 100%;
+}
+
+/* BUTTON 3 */
+.btn-3::after {
+  height: 0;
+  left: 50%;
+  top: 50%;
+  width: 0;
+}
+
+.btn-3:hover:after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+/* BUTTON 4 */
+.btn-4::before {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.btn-4::after {
+  background: #2ecc71;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.btn-4:hover:after {
+  height: 0;
+  left: 50%;
+  top: 50%;
+  width: 0;
+}
+
+/* BUTTON 5 */
+.btn-5 {
+  overflow: hidden;
+}
+
+.btn-5::after {
+  /*background-color: #f00;*/
+  height: 100%;
+  left: -35%;
+  top: 0;
+  transform: skew(50deg);
+  transition-duration: 0.6s;
+  transform-origin: top left;
+  width: 0;
+}
+
+.btn-5:hover:after {
+  height: 100%;
+  width: 135%;
+}
+
+.parent{background: #ccc; width: 250px; padding: 20px 0;}
+.child{background: #eee; padding: 1em; border: solid 1px #111;}
+
+/* But now for whatever reason I need to specify a width on my child element... */
+.withWidth{width: 20%;}
+
+/* CSS box-sizing to the rescue! */
+.boxPower{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+
+}

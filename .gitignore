@@ -1,2 +1,13 @@
 _site
 import.sh
+assets
+backup
+deprecated
+psd
+a
+files
+*.vim
+.DS_Store
+.sass-cache
+notes.txt
+
